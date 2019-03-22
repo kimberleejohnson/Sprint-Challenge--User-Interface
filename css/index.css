@@ -236,3 +236,31 @@ header {
     padding-left: 20px; 
     padding-top: 0px; 
 }
+
+/* I tried to just keep the middle content container from the index page, but display-flex wasn't working; this is a quick fix*/ 
+.about-middle-content {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.about-middle-content .about-box { 
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px; 
+    border-bottom: 1px dashed black; 
+}
+
+.about-box img {
+    padding-bottom: 10px; 
+    padding-top: 20px; 
+}
+
+.about-box button { 
+    border: 2px solid black;
+    border-radius: 10px; 
+    padding-top: 10px; 
+    padding-right: 20px; 
+    padding-left: 20px; 
+    margin-top: 10px;  
+}
