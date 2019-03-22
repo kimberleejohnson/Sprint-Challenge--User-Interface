@@ -144,3 +144,34 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/*NEW SPRINT CHALLENGE CSS CODE BEGINS HERE*/
+
+/* Header CSS */
+/* My header contains my nav and logo */
+header {
+    /* Makes everything auto-display in a row */
+    display: flex;  
+    /* Ensures there is space between the header logo and nav bar; pushes both to edge */
+    justify-content: space-between; 
+    /* Aligns nav and logo together*/
+    align-items: baseline;
+
+    margin-top: 30px; 
+    margin-bottom: 10px; 
+} 
+    /* header nav wraps around the list of items in my nav */
+    header nav {
+        /* Items in a row */
+        display: flex; 
+        /* Even space around each menu item */
+        justify-content: space-around; 
+        /* Adding margin to push nav closer to logo*/
+        margin-right: 80px;  
+        }
+        
+            /* Styles every list item in my nav */
+            header nav a {
+                margin-top: 20px; 
+                margin-left: 70px; 
+                }
