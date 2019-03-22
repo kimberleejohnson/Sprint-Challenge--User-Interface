@@ -171,14 +171,32 @@ header {
         margin-right: 80px;  
         }
         
+            /* Adding CSS animation to my nav */        
+            @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+            }
+        
             /* Styles every list item in my nav */
             header nav a {
                 margin-top: 20px; 
                 margin-left: 70px; 
                 }
+            
+            header nav a:hover {
+                /* Adding a background property and setting it to black.*/ 
+                background: black; 
+                /* Creating a color property and setting its value to white. */
+                color: white; 
+                /* Adding an animation to the header nav. */
+                animation-name: pulse; 
+                animation-duration: 2s; 
+                animation-iteration-count: infinite;
+                  }
 
-                /* image styling */ 
-.header-img {
+    /* image styling */ 
+    .header-img {
     /* top and bottom margin to create space between the image and the nav and content */ 
     margin-top: 30px;  
     margin-bottom: 30px; 
@@ -256,16 +274,33 @@ header {
     padding-top: 20px; 
 }
 
-.about-box button { 
-    border: 2px solid black;
-    border-radius: 10px; 
-    /* No bottom padding because this is how I'm centering my text*/
-    padding-top: 10px; 
-    padding-right: 20px; 
-    padding-left: 20px; 
-    margin-top: 10px;  
+    /* Adding CSS animation to my button */        
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.3); }
+        100% { transform: scale(1); }
+        }
+        
+    .about-box button { 
+        border: 2px solid black;
+        border-radius: 10px; 
+        /* No bottom padding because this is how I'm centering my text*/
+        padding-top: 10px; 
+        padding-right: 20px; 
+        padding-left: 20px; 
+        margin-top: 10px;  
+        }
 
-}
+    .about-box button:hover {
+        /* Adding a background property and setting it to black.*/ 
+        background: black; 
+        /* Creating a color property and setting its value to white. */
+        color: white; 
+        /* Adding an animation to the buttons */
+        animation-name: pulse; 
+        animation-duration: 2s; 
+        animation-iteration-count: infinite;
+        }
 
 .about-bottom-content {
     margin: 30px; 
