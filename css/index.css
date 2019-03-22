@@ -328,3 +328,9 @@ header {
             margin-left: 20px; 
             
         }
+
+/*Adding some styling to my form */
+input[type=textarea] {
+    width: 100%;
+    height: 300px; 
+ }
