@@ -34,15 +34,39 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+Don’t let the word “semantic” scare you! All semantic HTML means is HTML tags that carry meaning. For example, look at this example code: 
+<header> 
+	This is a header. 
+</header> 
+The <header> tag explicitly gives you (and the browser!) a heads up that the content inside is in fact a header. If the text had instead been wrapped in a div, you and the browser would’ve been left at the mercy of the naming conventions of the developer, which might not always be so clear. 
+
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+Display: block breaks the flow of an element’s content onto a new line. Whereas display: inline means that elements can nest inside each other without disrupting the flow of content. While it’s important to adjust the height and width of block elements to control for size, height and width have no effect on inline elements. 
+
+Despite the differences between the two, both had in common the fact that they kicked my butt on day two of Lambda School. 
 
 3. What are the 4 areas of the box model?
 
+1) Content: This is the “real” part of the box, or what you want the viewer to notice, like the paragraph, image, video, etc. 
+
+2) Padding: The space between the real content and the border. 
+
+3) Border: Binds around padding and content, and, like padding, can be adjusted to give different styling effects on the page. 
+
+4) Margin: The space between the border and everything else that’s on the page. 
+
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
+
+Align-items: center works on the cross axis of an element, or up and down along the page. 
 
 5. Explain why git is valuable to a team of developers.
 
-You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+Git makes it possible for developers to keep a record of all the changes they make to code, so future developers working on the same codebase can see and even restore previous versions. This comes in handy for collaborative efficiency, debugging, and also for keeping a record of decisions that are made. 
+
+
 
 ## Project Set Up
 
